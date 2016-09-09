@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
+<div class="feed">
+  
+
+   <% @cours.each do |cour| %>
+  
+  <div class="item shadow">
+    <p><strong>name :</strong> <%= cour.title %></p>
+    <div class="video">
+      <%=  embed(cour.url)%>
+    </div>
+        <div class="actionbar">
+  <div class="left">
+      <button type="button" class="btn btn-info" >
+        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        <span class="badge">(3)</span>
+      </button>
+  </div>
+    <div class="right">
+      créer il y a <%= time_ago_in_words(cour.created_at)%>
+    </div>
+    <%= link_to "voir l'article", cour, class: "btn btn-default" %>
+  </div>
+  </div>
+  
+  <% end %>
+  
+  </div>

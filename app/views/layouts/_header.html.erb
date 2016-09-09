@@ -1,0 +1,47 @@
+
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to "Create", new_cour_path, class: "navbar-brand" %>        
+          </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          <li><%= link_to "Recent",root_path %></li>
+
+            <li><%= link_to "Popular", '#' %></li>
+            <li><a href="#contact">Les Plus visités</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Niveau d'étude <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Lycée</a></li>
+                <li><a href="#">collège</a></li>
+                <li><a href="#">Terminale</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Preparation Bac</a></li>
+                <li><a href="#">Exercices corrigée</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">twitter</a></li>
+            <li>
+            <div class="face-share">
+               <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fcooperamaroc.herokuapp.com&layout=button_count&size=small&mobile_iframe=true&width=82&height=20&appId" width="82" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+             
+            </li>
+            <li> 
+            <div class="face-like">
+             <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcooperamaroc.herokuapp.com&width=130&layout=button_count&action=like&size=small&show_faces=true&share=false" width="130" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div> </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

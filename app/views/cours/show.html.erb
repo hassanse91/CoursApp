@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p id="notice"><%= notice %></p>
+<center>
+
+<div class="item-presentation">
+
+<div class="image">
+    <%= image_tag 'https://hellomentor.s3.amazonaws.com/users/avatars/large/22440.jpg?1452874129' %>
+  </div>
+
+  <h3>Name:</h3>
+  <h4><%= @cour.title %></h4>
+    
+  
+
+<%= link_to 'Edit', edit_cour_path(@cour), class: "btn btn-default" %> |
+<%= link_to 'Back', cours_path, class: "btn btn-default" %>
+
+</div>
+<div class="item-details">
+<div class="embed-container">  
+<%= embed(@cour.url) %>	
+</div>
+	<div class="item-show">
+	<h3>Presentation: </h3>
+		c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci 
+	</div>
+	<div class="item-activity">
+		<h3>Documents à telecharger:</h3>
+		<ul>
+			<li> Pdf</li>
+			<li>production de huile d'olive</li>
+			<li>Aceuil des touriste</li>
+		</ul>
+	</div>
+
+	
+
+	<div class="item-facebook">
+		<h3>Facebook page</h3>
+		<%= link_to "Facebook", root_path %>
+	</div>
+
+	
+</div>
+
+<center>
+<div class="list-items">
+	
+<%= render 'cours/list_item' %>
+ 
+</div>
+
