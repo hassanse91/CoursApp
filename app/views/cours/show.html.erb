@@ -10,38 +10,40 @@
   </div>
 
   <h3>Name:</h3>
-  <h4><%= @cour.title %></h4>
-    
-  
+  <h4>Hassan Senhaji</h4>
+  <h3>Matiere enseigné: </h3>
+  <h4>Maths Tous niveau</h4>
+  <%= link_to "Voir profil", "https://www.livementor.com/membre/Hassan-S?reserver", class: "btn btn-default" %> <br>
+
+
 
 <%= link_to 'Edit', edit_cour_path(@cour), class: "btn btn-default" %> |
 <%= link_to 'Back', cours_path, class: "btn btn-default" %>
 
 </div>
 <div class="item-details">
+<h3><%= @cour.title %></h3>
 <div class="embed-container">  
 <%= embed(@cour.url) %>	
 </div>
 	<div class="item-show">
 	<h3>Presentation: </h3>
-		c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci c'est une cour manifique avec une communication efficace avec les client c'est rare de trouver une tel comprehention avec des cour a ce temps la je suis fiere d'etre l'undes CEO de cette cour Merci 
+		<%= @cour.body %>
 	</div>
 	<div class="item-activity">
+		<h3>Creation</h3>
+		<%= simple_form_for [@cour, Document.new]  do |f| %>
+	      <div class="field">
+	        <%= f.input :title, class: "form-control" %>
+	        <%= f.input :url, class: "form-control" %>
+	      </div>
+	      <br>
+	      <%= f.submit "Add document", class: "btn btn-primary" %>
+	    <% end %>
+
 		<h3>Documents à telecharger:</h3>
-		<ul>
-			<li> Pdf</li>
-			<li>production de huile d'olive</li>
-			<li>Aceuil des touriste</li>
-		</ul>
+		 <%= render :partial => @cour.documents %>
 	</div>
-
-	
-
-	<div class="item-facebook">
-		<h3>Facebook page</h3>
-		<%= link_to "Facebook", root_path %>
-	</div>
-
 	
 </div>
 

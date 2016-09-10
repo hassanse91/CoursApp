@@ -1,0 +1,14 @@
+<%= div_for(document) do %>
+	<div class="documents_wrapper clearfix">
+		<div class="pull-left">
+			<p class="lead">
+			<%= link_to "#{document.title}",  "#{document.url}" %>
+		</div>
+
+		<div class="btn-group pull-right">
+		
+				<%= link_to 'Destroy', [document.cour, document], method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-default" %>
+		
+		</div>
+	</div>
+<% end %>

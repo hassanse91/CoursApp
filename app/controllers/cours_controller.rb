@@ -11,6 +11,7 @@ class CoursController < ApplicationController
   # GET /cours/1.json
   def show
     @cours = Cour.all
+    @documents = Document.where(cour_id: params[:cour_id])
   end
 
   # GET /cours/new
