@@ -7,7 +7,7 @@
    <% @cours.each do |cour| %>
   
   <div class="item shadow">
-    <p><strong>name :</strong> <%= cour.title %></p>
+    <p> <%= cour.title %></p>
     <div class="video">
       <%=  embed(cour.url)%>
     </div>
