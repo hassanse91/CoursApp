@@ -3,7 +3,9 @@
 <p id="notice"><%= notice %></p>
 <div class="feed">
   
-
+<div class="title">
+  <h2>Mes Videos( <%= @cours.count %> ) </h2>
+</div>
    <% @cours.each do |cour| %>
   
   <div class="item shadow">

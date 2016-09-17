@@ -15,12 +15,23 @@
     }
 }
 .feed {
-    text-align: center;
+    margin-left : 40px;
+    margin-right: 40px;
+    margin-top: 60px;
     div {
         display: block;
     }
+    .title{
+        margin: 15px;
+
+        h2{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
 
 .item{
+    text-align: center;
         margin: 10px;
     padding: 20px;
     background-color: white;
