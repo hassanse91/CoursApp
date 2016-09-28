@@ -12,7 +12,7 @@
           </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-          <li><%= link_to "Create",new_cour_path %></li>
+            <li><%= link_to "Create",new_cour_path %></li>         
           <li><%= link_to "Recent",root_path %></li>
 
             <li><%= link_to "Popular", '#' %></li>
@@ -27,6 +27,8 @@
                 <li class="dropdown-header">Apprendre Plus</li>
                 <li><a href="#">Preparation Bac</a></li>
                 <li><a href="#">Exercices corrigée</a></li>
+                <li><%= link_to "sign up", new_user_registration_path %> </li>
+                <li><%= link_to "sign in", new_user_session_path %> </li>
               </ul>
             </li>
           </ul>
